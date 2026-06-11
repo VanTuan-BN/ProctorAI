@@ -1,6 +1,30 @@
 # Student Proctoring & Earpiece Detection
 
-A lightweight, publishable snapshot of a student proctoring and cheating detection system. This repository includes source code, configuration, UI components, and model integration for deployment and review.
+## Project Description
+
+Online exam proctoring system for anti-cheating surveillance. This repository contains an independently researched and developed real-time AI system integrated with surveillance cameras to automate the detection of cheating behavior during exams. The project focuses on solving complex computer vision problems, including:
+
+- detecting tiny violation devices such as smartphones and earpiece headphones,
+- identifying unauthorized entries or a second person in the exam room,
+- verifying the candidate's identity using face recognition.
+
+## Value Proposition
+
+- **High accuracy**: uses a 2-stage pipeline architecture with automatic ROI extraction before deep object detection. Custom loss functions like Focal Loss and CIoU improve model convergence on imbalanced datasets.
+- **Tiny object detection**: optimized to identify earpieces and phones under challenging real-world conditions.
+- **Hardware and cost efficiency**: delivers real-time processing at > 30 FPS directly at the edge on common PC hardware.
+- **Low alert latency**: fast inference reduces bandwidth usage and keeps image data local for improved privacy.
+
+## Two-tier Architecture
+
+- **Edge data collection and processing layer**: runs close to the camera source, performs image preprocessing, ROI detection, violation detection, and face verification.
+- **Service and management layer**: coordinates APIs, stores events, displays admin dashboards, and enables centralized monitoring.
+
+## Tools and Platforms
+
+- Models & architecture:  `YOLO26`
+- Libraries & frameworks: `OpenCV`, `Python (OOP)`, `PyTorch`, `Hugging Face`
+- Infrastructure & platforms: `Kaggle (P100 GPU)`, `Roboflow` (data preprocessing and annotation), `Git/GitHub`
 
 ## Contents
 
@@ -32,6 +56,7 @@ This filtered repository is designed for sharing code without exposing:
 - earpiece detection in video/image frames
 - modular UI with separate admin and proctor interfaces
 - Python-based API service layer
+- real-time edge inference on common hardware (>30 FPS on typical PCs)
 
 ## Installation
 
@@ -68,13 +93,13 @@ python api_server.py
 ## App details (short)
 
 - `admin_app.py` — Admin dashboard and management UI. Use this to review sessions, flags, and logs.
-	- Run: `python admin_app.py --config config.yaml`
+  - Run: `python admin_app.py --config config.yaml`
 - `proctor_app.py` — Real-time proctoring client for exam sessions. Captures video, runs detection, and sends events to the server.
-	- Run: `python proctor_app.py --input camera --config config.yaml`
+  - Run: `python proctor_app.py --input camera --config config.yaml`
 - `api_server.py` — REST API server used by the UI and clients.
-	- Run: `python api_server.py --host 0.0.0.0 --port 8000`
+  - Run: `python api_server.py --host 0.0.0.0 --port 8000`
 - `face_verifier.py` — Utility/service for verifying face images against enrollment data.
-	- Run: `python face_verifier.py --image path/to/image.jpg --model models/Model_ft_person_earpiece.pt`
+  - Run: `python face_verifier.py --image path/to/image.jpg --model models/Model_ft_person_earpiece.pt`
 - `core_ai.py` — Core AI orchestration (imported by other apps; not usually run standalone).
 - `earpiece_detector_integration.py` — Module that integrates earpiece detection models into the pipeline.
 
