@@ -1,0 +1,80 @@
+<svg width="720" height="420" viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#e8eff2" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="ringOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f6f8d"/>
+      <stop offset="100%" stop-color="#062f4b"/>
+    </linearGradient>
+    <linearGradient id="ringInner" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#77dcff"/>
+      <stop offset="100%" stop-color="#0d6b8b"/>
+    </linearGradient>
+    <linearGradient id="meshLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9cff"/>
+      <stop offset="100%" stop-color="#8d5cff"/>
+    </linearGradient>
+    <linearGradient id="meshRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d3ff77"/>
+      <stop offset="100%" stop-color="#6bd56a"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0a3650" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="720" height="420" fill="url(#bgGlow)"/>
+
+  <g filter="url(#softShadow)">
+    <circle cx="360" cy="132" r="118" fill="url(#ringOuter)" stroke="#05263b" stroke-width="8"/>
+    <circle cx="360" cy="132" r="92" fill="#103851" stroke="url(#ringInner)" stroke-width="6"/>
+    <circle cx="360" cy="132" r="76" fill="#112941" stroke="#79dfff" stroke-opacity="0.6" stroke-width="3"/>
+
+    <g stroke="#6ad8ff" stroke-opacity="0.45" stroke-width="4" fill="none">
+      <path d="M294 64 L332 38 L388 38 L426 64"/>
+      <path d="M278 105 L248 132 L278 159"/>
+      <path d="M442 105 L472 132 L442 159"/>
+      <path d="M310 204 L360 226 L410 204"/>
+      <path d="M301 84 Q360 54 419 84"/>
+      <path d="M301 180 Q360 208 419 180"/>
+    </g>
+
+    <g stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M310 86 L338 72 L360 92 L338 118 L302 108 Z" stroke="url(#meshLeft)"/>
+      <path d="M360 92 L392 72 L420 88 L420 124 L388 144 L360 124 Z" stroke="url(#meshRight)"/>
+      <path d="M302 108 L338 118 L352 156 L324 188 L292 170 L282 132 Z" stroke="url(#meshLeft)"/>
+      <path d="M360 124 L388 144 L398 184 L362 210 L324 188 L352 156 Z" stroke="url(#meshLeft)"/>
+      <path d="M388 144 L420 124 L444 132 L452 170 L430 202 L398 184 Z" stroke="url(#meshRight)"/>
+      <path d="M338 72 L392 72" stroke="#e8c7ff"/>
+      <path d="M338 118 L388 144" stroke="#d7e8ff"/>
+      <path d="M338 118 L352 156" stroke="#ffe0ff"/>
+      <path d="M352 156 L398 184" stroke="#d1f0ff"/>
+      <path d="M360 92 L360 124" stroke="#f0d0ff"/>
+      <path d="M362 210 L430 202" stroke="#b9f48e"/>
+    </g>
+
+    <g>
+      <circle cx="302" cy="108" r="7" fill="#fb9cff"/>
+      <circle cx="338" cy="72" r="7" fill="#f0a8ff"/>
+      <circle cx="360" cy="92" r="7" fill="#ffd8ff"/>
+      <circle cx="392" cy="72" r="7" fill="#c79cff"/>
+      <circle cx="420" cy="88" r="7" fill="#a0ee8f"/>
+      <circle cx="282" cy="132" r="7" fill="#ff87df"/>
+      <circle cx="324" cy="188" r="7" fill="#af72ff"/>
+      <circle cx="352" cy="156" r="7" fill="#ff9ce9"/>
+      <circle cx="360" cy="124" r="8" fill="#d7dbff"/>
+      <circle cx="388" cy="144" r="7" fill="#cbff80"/>
+      <circle cx="398" cy="184" r="7" fill="#adf778"/>
+      <circle cx="362" cy="210" r="7" fill="#9cf089"/>
+      <circle cx="430" cy="202" r="7" fill="#8de770"/>
+      <circle cx="444" cy="132" r="7" fill="#9de179"/>
+    </g>
+  </g>
+
+  <g fill="#0b4d67" font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="360" y="330" font-size="54" font-weight="800" letter-spacing="2">S-MONITOR</text>
+    <text x="360" y="370" font-size="26" font-weight="700" letter-spacing="1.6">AI-POWERED PROCTORING</text>
+  </g>
+</svg>

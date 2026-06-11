@@ -1,0 +1,78 @@
+# Ignore dataset folders and training data
+Dataset_earpiece_finetune/
+Dataset_earpiece_finetune_clean/
+Dataset_earpiece_specialist/
+Dataset_SAHI/
+
+# Ignore runtime data and evidence storage
+server_evidence/
+server_database/
+server_submissions/
+
+# Ignore build / packaging artifacts
+build/
+dist/
+runs/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore VS Code settings and local editor files
+.vscode/
+
+# Ignore personal / temporary files
+*.log
+*.tmp
+*.cache
+
+# Ignore images and video files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tif
+*.tiff
+*.heic
+*.webp
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.mpeg
+*.mpg
+*.3gp
+*.flv
+*.mts
+*.m2ts
+
+# Keep model weights if desired; remove the next line if you do not want them in Git
+# models/*.pt
+
+# môi trường Python
+venv/
+__pycache__/
+*.pyc
+
+# dữ liệu lớn / nhạy cảm
+Dataset_*/
+Dataset_earpiece_*/
+Dataset_SAHI/
+server_database/
+server_evidence/
+server_submissions/
+*.sqlite
+*.db
+
+# logs / temp
+runs/
+dist/
+build/
+*.log
+
+# tùy chọn: loại trừ trọng số lớn nếu không muốn push
+models/*.pt
