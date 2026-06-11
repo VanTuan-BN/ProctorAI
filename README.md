@@ -131,7 +131,7 @@ python face_verifier.py --image samples/student1.jpg --model models/Model_ft_per
 
 ## Configuration
 
-Update `config.yaml` before running the application to adjust:
+Copy `config.example.yaml` to `config.yaml` and update it before running the application. Adjust:
 
 - input sources
 - model paths
@@ -145,7 +145,7 @@ Update `config.yaml` before running the application to adjust:
 - `logos/` — branding and icon graphics
 - `models/` — model weight files
 - `requirements.txt` — Python dependencies
-- `config.yaml` — application settings
+- `config.example.yaml` — application settings template
 
 ## Notes for reviewers
 

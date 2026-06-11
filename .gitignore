@@ -76,3 +76,7 @@ build/
 
 # tùy chọn: loại trừ trọng số lớn nếu không muốn push
 models/*.pt
+
+# Ignore local runtime configuration with secrets
+config.yaml
+

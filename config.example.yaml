@@ -1,7 +1,7 @@
 database:
   host: 127.0.0.1
   user: root
-  password: "12345"
+  password: "your_db_password"
   name: exam_monitor_db
 
 server:
