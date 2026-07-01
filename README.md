@@ -10,8 +10,7 @@ Online exam proctoring system for anti-cheating surveillance. This repository co
 
 ## Application Demo
 Click on the image to watch the demo video
-[![Xem Video Demo](assets/logos/s-monitor-login-default.svg)]([https://drive.google.com/file/d/1czRusAwwb_y2BK6MVJclA3HpsEpO5KxG/view?usp=drive_link])
-
+[![Xem Video Demo](assets/logos/s-monitor-login-default.svg)](https://drive.google.com/file/d/1czRusAwwb_y2BK6MVJclA3HpsEpO5KxG/view?usp=drive_link)
 ## Value Proposition
 
 - **High accuracy**: uses a 2-stage pipeline architecture with automatic ROI extraction before deep object detection. Custom loss functions like Focal Loss and CIoU improve model convergence on imbalanced datasets.
