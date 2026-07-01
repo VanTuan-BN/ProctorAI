@@ -9,7 +9,7 @@ Online exam proctoring system for anti-cheating surveillance. This repository co
 - verifying the candidate's identity using face recognition.
 
 ## Application Demo
-<video src="assets/video_demo.mp4" controls width="100%"></video>
+Click on the image to watch the demo video
 [![Video Demo](assets/logos/s-monitor-login-default.svg)](https://drive.google.com/drive/folders/1gykiGh9l8hnKY4WOI2-KEW7cfHiEP4xt?usp=sharing)
 
 ## Value Proposition
