@@ -10,9 +10,7 @@ Online exam proctoring system for anti-cheating surveillance. This repository co
 
 ## Application Demo
 
-<p align="center">
-  <video src="https://githubusercontent.com" width="100%" max-width="750px" autoplay loop muted playsinline></video>
-</p>
+<video src="assets/video_demo.mp4" controls width="100%"></video>
 
 ## Value Proposition
 
