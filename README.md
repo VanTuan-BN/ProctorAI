@@ -8,6 +8,12 @@ Online exam proctoring system for anti-cheating surveillance. This repository co
 - identifying unauthorized entries or a second person in the exam room,
 - verifying the candidate's identity using face recognition.
 
+## Application Demo
+
+<p align="center">
+  <video src="assets/video_demo_perfect_blur.mp4" width="100%" max-width="750px" autoplay loop muted playsinline></video>
+</p>
+
 ## Value Proposition
 
 - **High accuracy**: uses a 2-stage pipeline architecture with automatic ROI extraction before deep object detection. Custom loss functions like Focal Loss and CIoU improve model convergence on imbalanced datasets.
