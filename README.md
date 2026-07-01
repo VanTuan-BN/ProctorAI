@@ -10,7 +10,7 @@ Online exam proctoring system for anti-cheating surveillance. This repository co
 
 ## Application Demo
 Click on the image to watch the demo video
-[![Video Demo](https://drive.google.com/file/d/1czRusAwwb_y2BK6MVJclA3HpsEpO5KxG/view?usp=sharing)
+[![Xem Video Demo](assets/logos/s-monitor-login-default.svg)]([LINK_FILE_VIDEO_BẠN_VỪA_COPY](https://drive.google.com/file/d/1czRusAwwb_y2BK6MVJclA3HpsEpO5KxG/view?usp=drive_link))
 
 ## Value Proposition
 
